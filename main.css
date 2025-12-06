@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:6000px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+
+}
+.header .container .logo-list{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+.header .container {
+display: flex;
+padding: 45px;
+justify-content: space-between;
+
+align-items: center;
+
+}
+ul{
+    list-style-type: none;
+}
+.list ul{
+    display: flex;
+    gap: 35px;
+}
+.search-form form{
+    display: flex;
+    border: 1px solid slategray;
+    
+}
+.header .list a{
+    text-decoration: none;
+    color: #0D0E43;
+    font-family: Lato;
+    transition: 1.1s;
+}
+.header .list a:hover{
+    color: blue;
+    font-size: 18px;
+    text-decoration: underline blue;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+.header input{
+    border: 0;
+    width: 200px;
+    padding-left:10px; 
+}
+.header button{
+    border: 0;
+    background-color:#FB2E86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+}
+.header .container .list .Home{
+    color: #FB2E86;
+}
+.header .container .list .Home:hover{
+    color: blue;
+}
+

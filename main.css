@@ -9,6 +9,7 @@ body{
 .header{
     position: fixed;
     width: 100%;
+    background-color: white;
 
 }
 .header .container .logo-list{
@@ -24,10 +25,12 @@ justify-content: space-between;
 align-items: center;
 
 }
+
 ul{
     list-style-type: none;
 }
-.list ul{
+
+.header .list ul{
     display: flex;
     gap: 35px;
 }
@@ -36,7 +39,8 @@ ul{
     border: 1px solid slategray;
     
 }
-.header .list a{
+
+.list a{
     text-decoration: none;
     color: #0D0E43;
     font-family: Lato;
@@ -52,20 +56,26 @@ ul{
 .container{
     width: 80%;
     margin: auto;
-    
+
 }
-.header input{
+input{
     border: 0;
-    width: 200px;
+    width: 250px;
     padding-left:10px; 
+    font-family: Lato;
+    font-size: 16px;
+   color: #8A8FB9;
+   
 }
-.header button{
+button{
     border: 0;
     background-color:#FB2E86;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px 8px;
+    font-family: Lato;
+    color: #EEEFFB;
 }
 .header .container .list .Home{
     color: #FB2E86;
@@ -73,4 +83,102 @@ ul{
 .header .container .list .Home:hover{
     color: blue;
 }
+.header .menu {
+    display: none;
+}
 
+
+@media screen and (min-width:0) and (max-width:1019px) {
+    .header .list,
+    .header .search-form {
+        display: none;
+    }
+   .header .menu {
+        display: block;
+    }
+}
+.row{
+    display: flex;
+     flex-wrap: wrap;
+}
+/*start footer*/
+.footer .row {
+    gap: 20px;
+     
+}
+.footer{
+  padding: 45px;
+    
+    
+}
+.footer .footer-right {
+     display: flex;
+    gap: 20px;
+    
+}
+.footer .footer-left{
+    width: calc( (100% - 20px) /2 );
+}
+.footer .footer-right{
+    width: calc( (100% - 20px) /2 );
+}
+@media screen and (min-width:0) and (max-width:958px) {
+   .footer .footer-left,
+   .footer .footer-right {
+        width: 100%;
+
+    }
+    .footer .footer-right {
+       flex-wrap: wrap;
+
+    }
+}
+   
+.footer ul{
+     display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.footer .footer-iteam{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+
+.footer .footer-left{
+     display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer .search-info{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.footer a{
+    color: #8A8FB9;
+}
+.footer h2{
+    font-family: Josefin Sans;
+    font-size: 22px;
+}
+.footer p{
+    font-family: Lato;
+    font-size: 16px;
+    color: #8A8FB9;
+}
+.footer .search-form form{
+    display: inline-flex; 
+   border: 0;
+   
+    
+}
+    
+ .footer button{
+    padding: 10px 30px;
+    background-color:#FB2E86;
+
+}
+
+/*end footer */

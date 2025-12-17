@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height:6000px;
-}
+
 .test{
 height: 110px;
 }
@@ -118,6 +116,7 @@ button{
 .footer .footer-right {
      display: flex;
     gap: 20px;
+   
     
 }
 .footer .footer-left{
@@ -161,6 +160,7 @@ button{
     gap: 35px;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 .footer .search-info{
     display: flex;
@@ -341,8 +341,9 @@ button{
 
 }
 .background button{
-    padding:10px 30px ;
+    padding:15px 40px ;
     font-family: Josefin Sans ;
+    font-size: 17p;
 }
 @media screen and (min-width:0) and (max-width:500px) {
     .background h2{

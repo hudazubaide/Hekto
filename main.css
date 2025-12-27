@@ -242,7 +242,6 @@ button{
    color: #AAAAAA;
    font-family: Josefin Sans;
     text-align: center;
-     justify-content: center;
 }
 .Featured-Products .Product h2{
     font-size: 18px;
@@ -258,6 +257,7 @@ button{
     height: 200px;
     background-color: #F6F7FB;
     padding: 20px 20px;
+    display: flex;
     align-items: center; 
     justify-content: center;
     
@@ -294,14 +294,8 @@ button{
 @media screen and (min-width:0) and (max-width:500px) {
   .Featured-Products .Product{
         width: 100%;
-         
-
     }
-    .Featured-Products .pro-img img{
-    height: 150px;
-    width: 130px;
     
-}
 .Featured-Products .pro-h{
     font-size: 20px;
 }
@@ -345,14 +339,14 @@ button{
 .background button{
     padding:15px 40px ;
     font-family: Josefin Sans ;
-    font-size: 17p;
+    font-size: 17px;
 }
 @media screen and (min-width:0) and (max-width:500px) {
     .background h2{
-        font-size: 15px;
+        font-size: 17px;
     }
   .background button{
-    padding:5px 10px ;
+   padding:10px 20px ;
     font-size: 13px;
   }
   .background .container{
@@ -369,8 +363,8 @@ button{
         font-size: 30px;
     }
     .background button{
-    padding:5px 15px ;
-    font-size: 16px;
+   padding:10px 30px ;
+    font-size: 13px;
   }
   .background .container{
     gap: 15px;
@@ -412,7 +406,7 @@ button{
   width: 100%;
 }
   
-
+https://github.com/hudazubaide/Hekto.git
 
 .hero h2{
     font-size: 50px;
@@ -458,6 +452,101 @@ button{
 }
 
 }
-
-
 /*end hero*/
+/*start leat...*/
+.Leatest{
+    padding: 50px 0;
+}
+.Leatest .container {
+    display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.leatProduct{
+    width: calc((100% - 60px)/3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     
+     
+    
+}
+.leatProduct .leat-img{
+    height: 250px;
+   background-color: #F7F7F7;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+.leatProduct .leatpro-details{
+    
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.Leatest .h-leat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.Leatest .a-leat{
+    display: flex;
+    gap: 40px;
+}
+.Leatest span{
+    
+    font-family:Josefin Sans ;
+    color: #151875;
+}
+.Leatest .span-calar{
+    color:#FB2E86 ;
+}
+.Leatest h2{
+    font-size: 42px;
+    font-family:Josefin Sans ;
+     color: #151875;
+
+}
+.Leatest a{
+    text-decoration: none;
+    color: #151875;
+    font-family: Lato;
+    transition: 1.1s;
+}
+.Leatest a:hover{
+    color:#FB2E86;
+    font-size: 18px;
+    text-decoration: underline #FB2E86;
+
+}
+@media screen and (min-width:0) and (max-width:740px) {
+ .leatProduct{
+        width: 100%;
+         
+    }
+.Leatest h2{
+    font-size: 20px;
+}
+.Leatest a{
+    font-size: 14px;
+}
+.Leatest .a-leat{
+    gap: 15px;
+}
+}
+
+@media screen and (min-width:741px) and (max-width:1080px) {
+   .leatProduct{
+        width: calc((100% - 30px)/2);
+
+    }
+    .Leatest h2{
+    font-size: 27px;
+}
+}
+/*end leat...*/

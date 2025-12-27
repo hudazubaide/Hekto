@@ -195,7 +195,7 @@ button{
 /*end footer */
 /*start Featured Products*/
 .Featured-Products{
-    padding: 20px 0;
+    padding: 50px 0;
 }
 .Featured-Products .container{
   display: flex;
@@ -300,6 +300,7 @@ button{
     .Featured-Products .pro-img img{
     height: 150px;
     width: 130px;
+    
 }
 .Featured-Products .pro-h{
     font-size: 20px;
@@ -326,6 +327,7 @@ button{
     background-repeat: no-repeat; 
     display: flex;
     text-align: center;
+    
 }
 .background .container{
     display: flex;
@@ -364,7 +366,7 @@ button{
 }
 @media screen and (min-width:501px) and (max-width:958px) {
     .background h2{
-        font-size: 20px;
+        font-size: 30px;
     }
     .background button{
     padding:5px 15px ;
@@ -381,3 +383,81 @@ button{
 }
 
 /*end background*/
+/*start hero*/
+.hero{
+    background-color: #F2F0FF;
+    padding: 50px 0;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.hero .hero-left{
+    
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     flex-direction: column;
+     gap: 30px;
+      width: calc((100% - 15px)/2);
+    
+      
+}
+.hero .hero-right{
+    width: calc((100% - 15px)/2);
+       
+}
+.hero .hero-right img {
+  width: 100%;
+}
+  
+
+
+.hero h2{
+    font-size: 50px;
+    font-family: Josefin Sans ;
+}
+.hero p{
+    font-family: lato;
+}
+.hero span{
+    font-family: lato;
+    color: #FB2E86;
+}
+.hero button{
+   padding:15px 40px ;
+    font-family: Josefin Sans ;
+    font-size: 17px;
+}
+@media screen and (min-width:0) and (max-width:1080px) {
+    .hero .container {
+    flex-direction: column;
+    
+  }
+
+  .hero .hero-left,
+  .hero .hero-right {
+    width: 100%;
+}
+
+}
+@media screen and (min-width:0) and (max-width:500px) {
+    .hero h2{
+    font-size: 30px;
+}
+.hero button{
+    padding:10px 30px ;
+    font-size: 13px;
+}
+
+}
+@media screen and (min-width:501px) and (max-width:1080px) {
+.hero h2{
+    font-size: 40px;
+}
+
+}
+
+
+/*end hero*/

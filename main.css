@@ -406,7 +406,7 @@ button{
   width: 100%;
 }
   
-https://github.com/hudazubaide/Hekto.git
+
 
 .hero h2{
     font-size: 50px;
@@ -530,7 +530,7 @@ https://github.com/hudazubaide/Hekto.git
          
     }
 .Leatest h2{
-    font-size: 20px;
+    font-size: 25px;
 }
 .Leatest a{
     font-size: 14px;
@@ -550,3 +550,72 @@ https://github.com/hudazubaide/Hekto.git
 }
 }
 /*end leat...*/
+/*ShopexOffer*/
+.ShopexOffer{
+    padding: 50px 0;
+}
+.ShopexOffer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.ShopexOffer .Offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding: 35px 35px 45px 35px; 
+    box-shadow :0px 0px 10px  rgba(0, 0, 0, 0.08); 
+}
+.ShopexOffer p{
+    text-align: center;
+    color: rgba(26, 11, 91, 0.3);
+    font-family: Lato;
+}
+.ShopexOffer h2{
+    text-align: center;
+    padding-bottom:30px ;
+    font-family: Josefin Sans;
+    color: #151875;
+    font-size: 42px;
+
+}
+.ShopexOffer .offer-img{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ShopexOffer span{
+    color: #151875;
+    font-size: 27px;
+    font-family: Josefin Sans;
+}
+@media screen and (min-width:741px) and (max-width:1080px) {
+   .Offer{
+        width: calc((100% - 30px)/2);
+        
+    }
+    .ShopexOffer .container{
+        flex-wrap: wrap;
+    }
+    .ShopexOffer h2{
+    font-size: 34px;
+}
+}
+
+@media screen and (min-width:0) and (max-width:740px) {
+    .Offer{
+        width: 100%;
+        
+    }
+    .ShopexOffer .container{
+        flex-wrap: wrap;
+    }
+   .ShopexOffer h2{
+    font-size: 25px;
+}
+}
+/*ShopexOffer*/

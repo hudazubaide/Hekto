@@ -392,7 +392,7 @@ button{
      justify-content: center;
      flex-direction: column;
      gap: 30px;
-      width: calc((100% - 15px)/2);
+    width: calc((100% - 15px)/2);
     
       
 }
@@ -411,10 +411,10 @@ button{
     font-family: Josefin Sans ;
 }
 .hero p{
-    font-family: lato;
+    font-family: Lato;
 }
 .hero span{
-    font-family: lato;
+    font-family: Lato;
     color: #FB2E86;
 }
 .hero button{
@@ -453,7 +453,7 @@ button{
 /*end hero*/
 /*start leat...*/
 .Leatest{
-    padding: 50px;
+    padding: 50px 0px;
 }
 .Leatest .container {
     display: flex;
@@ -748,7 +748,7 @@ button{
 .TopCategories h2{
     color: #151875;
     font-family: Josefin Sans;
-    font-size: Josefin Sans;
+    font-size: 42px;
     text-align: center;
     padding-bottom:30px ;
 }
@@ -779,3 +779,97 @@ button{
 }
 }
 /*TopCategories*/
+/*LeatestBlog*/
+.LeatestBlog{
+    padding: 50px;
+}
+.LeatestBlog .container{
+     display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.LeatestBlog .blog{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    width: calc((100% - 60px)/3);
+    box-shadow :0px 0px 5px  rgba(0, 0, 0, 0.08);
+   
+}
+
+
+.LeatestBlog .blog-details{
+     display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 15px;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.blog-item{
+    display: flex;
+    gap: 20px;
+}
+.LeatestBlog h2{
+    color: #151875;
+    font-family: Josefin Sans;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom:30px ;
+}
+.LeatestBlog p{
+    font-family: Lato;
+    color: #72718F;
+}
+.LeatestBlog h3{
+    font-size: 18px;
+    
+}
+
+.LeatestBlog a{
+    font-family: Lato;
+    
+}
+.LeatestBlog h3{
+    font-size: 18px;
+}
+.LeatestBlog .blog-img {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LeatestBlog .blog-img img{
+    width: 100%;
+}
+
+@media screen and (min-width:741px) and (max-width:1080px) {
+    .LeatestBlog .blog{
+       width: calc((100% - 30px)/2);
+        
+    }
+    .LeatestBlog .container{
+        flex-wrap: wrap;
+    }
+
+    .LeatestBlog h2{
+    font-size: 34px;
+}
+
+}
+
+@media screen and (min-width:0) and (max-width:740px) {
+    .LeatestBlog .blog{
+        width: 100%;
+        
+    }
+    .LeatestBlog .container{
+        flex-wrap: wrap;
+    }
+   .LeatestBlog h2{
+    font-size: 25px;
+}
+}
+
+/*LeatestBlog*/

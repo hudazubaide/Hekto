@@ -199,8 +199,7 @@ button{
 }
 .Featured-Products .container{
   display: flex;
-  padding: 45px;
-  justify-content: space-between;
+  padding: 50px;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
@@ -256,7 +255,6 @@ button{
 .Featured-Products .pro-img{
     height: 200px;
     background-color: #F6F7FB;
-    padding: 20px 20px;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -380,7 +378,7 @@ button{
 /*start hero*/
 .hero{
     background-color: #F2F0FF;
-    padding: 50px 0;
+    padding: 50px;
 }
 .hero .container{
     display: flex;
@@ -455,7 +453,7 @@ button{
 /*end hero*/
 /*start leat...*/
 .Leatest{
-    padding: 50px 0;
+    padding: 50px;
 }
 .Leatest .container {
     display: flex;
@@ -552,7 +550,7 @@ button{
 /*end leat...*/
 /*ShopexOffer*/
 .ShopexOffer{
-    padding: 50px 0;
+    padding: 50px;
 }
 .ShopexOffer .container{
     display: flex;
@@ -568,6 +566,7 @@ button{
     gap: 20px; 
     padding: 35px 35px 45px 35px; 
     box-shadow :0px 0px 10px  rgba(0, 0, 0, 0.08); 
+     width: calc((100% - 90px)/4);
 }
 .ShopexOffer p{
     text-align: center;
@@ -594,7 +593,7 @@ button{
     font-family: Josefin Sans;
 }
 @media screen and (min-width:741px) and (max-width:1080px) {
-   .Offer{
+    .ShopexOffer .Offer{
         width: calc((100% - 30px)/2);
         
     }
@@ -607,7 +606,7 @@ button{
 }
 
 @media screen and (min-width:0) and (max-width:740px) {
-    .Offer{
+    .ShopexOffer .Offer{
         width: 100%;
         
     }
@@ -621,11 +620,11 @@ button{
 /*ShopexOffer*/
 /*trendingproducts*/
 .trendingpro {
-    padding: 50px 0;
+    padding: 50px;
 }
 .trendingpro .container{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
 
 }
@@ -636,15 +635,15 @@ button{
     box-shadow :0px 0px 10px  rgba(0, 0, 0, 0.08);
     padding-bottom: 20px;
     border: 11px solid #fff;
-   
-
+    width: calc((100% - 90px)/4);
 }
 .trendingpro .trend-img{
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-     background-color: #F5F6F8;   
+     background-color: #F5F6F8; 
+      
 }
 .trendingpro .trend-details{
     display: flex;
@@ -680,7 +679,7 @@ button{
     gap:12px ;
 }
 @media screen and (min-width:741px) and (max-width:1080px) {
-   .trend-pro{
+    .trendingpro .trend-pro{
         width: calc((100% - 40px)/2);
         
     }
@@ -694,7 +693,7 @@ button{
 }
 
 @media screen and (min-width:0) and (max-width:740px) {
-    .trend-pro{
+    .trendingpro .trend-pro{
         width: 100%;
         
     }
@@ -706,3 +705,77 @@ button{
 }
 }
 /*trendingproducts*/
+/* TopCategories*/
+.TopCategories{
+    padding: 50px;
+}
+.TopCategories .container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.TopCategories .top-cat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    width: calc((100% - 90px)/4);
+}
+.TopCategories .top-img{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F7FB; 
+    border-radius: 50%;
+    box-shadow :0px 0px 5px  rgba(0, 0, 0, 0.08); 
+
+    
+}
+.TopCategories .top-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.top-span1{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.TopCategories h2{
+    color: #151875;
+    font-family: Josefin Sans;
+    font-size: Josefin Sans;
+    text-align: center;
+    padding-bottom:30px ;
+}
+@media screen and (min-width:741px) and (max-width:1080px) {
+    .TopCategories .top-cat{
+        width: calc((100% - 40px)/2);
+        
+    }
+    .TopCategories .container{
+        flex-wrap: wrap;
+    }
+
+    .TopCategories h2{
+    font-size: 34px;
+}
+}
+
+@media screen and (min-width:0) and (max-width:740px) {
+    .TopCategories .top-cat{
+        width: 100%;
+        
+    }
+    .TopCategories .container{
+        flex-wrap: wrap;
+    }
+   .TopCategories h2{
+    font-size: 25px;
+}
+}
+/*TopCategories*/

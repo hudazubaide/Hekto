@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 
-.test{
-height: 110px;
-}
 .header{
-    position: fixed;
+    top: 0;
+    position:sticky;
     width: 100%;
     background-color: white;
-
+    z-index: 999;
 }
 .header .container .logo-list{
     display: flex;
@@ -109,9 +107,8 @@ button{
      
 }
 .footer{
-  padding: 45px;
-    
-    
+  padding: 50px;
+  background-color: #F6F7FB;   
 }
 .footer .footer-right {
      display: flex;
@@ -210,21 +207,44 @@ button{
     width: calc((100% - 90px)/4);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
     box-shadow :0px 0px 10px  rgba(0, 0, 0, 0.08);
     text-align: center;
      justify-content: center;
-    
+     position: relative;
+     
+}
+.Product .icons{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    transition: 1.1s;
+}
+
+.Product:hover .icons{
+    opacity: 1;
+     
 }
 .Featured-Products .pro-details{
-     display: flex;
+    display: flex;
     flex-direction: column;
     gap: 12px;
     text-align: center;
-     justify-content: center;
-     padding: 10px 0;
+    justify-content: center;
+    padding: 10px 0;
+    transition: 1.1s;
 
+}
+.Product:hover .pro-details{
+    background-color: #2F1AC4;
+}
+.Product:hover h2{
+    color: white;
+}
+.Product:hover span{
+    color: white;
 }
 .Featured-Products .pro-but{
    display: flex;
@@ -242,25 +262,43 @@ button{
    font-family: Josefin Sans;
     text-align: center;
 }
-.Featured-Products .Product h2{
+.Product h2{
     font-size: 18px;
     font-family: Lato;
     color: #FB2E86;
+    transition: 1.1s;
 }
-.Featured-Products .Product span{
+.Product span{
     font-size: 14px;
     font-family: Josefin Sans;
     color: #151875;
+    transition: 1.1s;
 }
-.Featured-Products .pro-img{
+.Product .pro-img{
     height: 200px;
     background-color: #F6F7FB;
     display: flex;
     align-items: center; 
-    justify-content: center;
-    
-    
+    justify-content: center;  
+} 
+.Product .img-but{
+    display: none;   
 }
+.Product:hover .img-but{
+    display: block;
+     
+}
+.img-but button{
+    padding: 10px 15px;
+    background-color: #08D15F;
+   
+} 
+.Product:hover .pro-img{
+   flex-direction: column;
+   height: 230px;
+   transition: 0.5s;
+}
+
 .Featured-Products .pro-but button{
      width: 14px;
      height: 4;
@@ -295,7 +333,7 @@ button{
     }
     
 .Featured-Products .pro-h{
-    font-size: 20px;
+    font-size: 25px;
 }
 }
 @media screen and (min-width:501px) and (max-width:958px) {
@@ -304,7 +342,7 @@ button{
 
     }
     .Featured-Products .pro-h{
-    font-size: 27px;
+    font-size: 34px;
 }
 }
 
@@ -466,9 +504,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 20px;
-     
-     
-    
+    position: relative;  
 }
 .leatProduct .leat-img{
     height: 250px;
@@ -478,6 +514,29 @@ button{
   justify-content: center;
     
 }
+.leatProduct .sale{
+    position: absolute;
+    left: -12px;  
+}
+.leatProduct .icons{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 15px;
+    opacity: 0;
+}
+.leatProduct:hover .icons{
+    opacity: 1;
+    transition: 1.1s;
+
+}
+
+.sale img{
+    width: 100%;
+}
+
 .leatProduct .leatpro-details{
     
     display: flex;
@@ -501,8 +560,15 @@ button{
     font-family:Josefin Sans ;
     color: #151875;
 }
+.Leatest .det1{
+    text-decoration: underline #EEEFFB;
+    text-underline-offset: 5px;
+}
 .Leatest .span-calar{
     color:#FB2E86 ;
+    text-decoration: line-through;
+    font-size: 12px;
+    
 }
 .Leatest h2{
     font-size: 42px;
@@ -714,23 +780,60 @@ button{
     gap: 30px;
     justify-content: center;
 }
-.TopCategories .top-cat{
+.top-cat{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 20px;
     width: calc((100% - 90px)/4);
 }
-.TopCategories .top-img{
+.top-img{
     height: 250px;
+    width: 250px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F6F7FB; 
+    background-color: #F6F7FB;
     border-radius: 50%;
-    box-shadow :0px 0px 5px  rgba(0, 0, 0, 0.08); 
+    box-shadow :0px 0px 5px rgba(0, 0, 0, 0.08);
+    position: relative; 
+}
 
-    
+
+.top-img::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px ;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0px #9877E7;
+  transform: rotate(90deg);
+  opacity: 0;
+  
+}
+.top-cat:hover .top-img::before {
+  opacity: 1;
+  transition: 1.1s;
+  
+}
+
+
+.top-cat .img-but2{
+    display: none; 
+}
+.top-cat:hover .img-but2{
+    display: block;
+}
+.img-but2 button{
+    padding: 5px 10px;
+    background-color: #08D15F;
+   
+} 
+.top-cat:hover .top-img{
+   flex-direction: column;
 }
 .TopCategories .top-details{
     display: flex;
@@ -778,10 +881,11 @@ button{
     font-size: 25px;
 }
 }
+
 /*TopCategories*/
 /*LeatestBlog*/
 .LeatestBlog{
-    padding: 50px;
+    padding: 50px 0px;
 }
 .LeatestBlog .container{
      display: flex;
@@ -795,9 +899,15 @@ button{
     padding-bottom: 20px;
     width: calc((100% - 60px)/3);
     box-shadow :0px 0px 5px  rgba(0, 0, 0, 0.08);
-   
+    transition: 1.1s;
 }
 
+.LeatestBlog .blog:hover a{
+    color:#FB2E86;
+}
+.LeatestBlog .blog:hover h3{
+    color:#FB2E86;
+}
 
 .LeatestBlog .blog-details{
      display: flex;
@@ -809,7 +919,7 @@ button{
 }
 .blog-item{
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 .LeatestBlog h2{
     color: #151875;
@@ -831,6 +941,7 @@ button{
     font-family: Lato;
     
 }
+
 .LeatestBlog h3{
     font-size: 18px;
 }
